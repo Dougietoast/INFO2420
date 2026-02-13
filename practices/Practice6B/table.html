@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<meta charset="UTF-8">
+	
+<title>HTML Practice 6 - Tables</title>
+
+<style type="text/css">
+
+body {
+   background-color: rgb(155, 151, 151);
+}
+
+div {
+   text-align: center;
+}
+table {
+   background-color: rgb(141, 224, 245);
+   margin: auto;
+   width: 550px;
+border-collapse: separate;
+border-spacing: 10px;
+}
+table, th, td {
+   border: 1px solid rgb(95, 95, 95);
+}
+
+th, td {
+   padding: 15px;
+   line-height: 1;
+}
+
+caption {
+   background-color: #99ff66;
+   color: #003300;
+}
+
+.day-header {
+   background-color: #99ff66;
+}
+
+.first-col {
+   background-color: #CCCCCC;
+   width: 25%;
+}
+
+
+
+</style>
+</head>
+<body>
+<div >
+   
+   <table >
+      <caption>My Weekly Schedule</caption>
+
+
+      <colgroup>
+         <col class="first-col" />
+      </colgroup>
+      <colgroup span="5"></colgroup>
+
+
+      <tr>
+         
+      <th scope="col">Courses</th>
+            <th scope="col" class="day-header">Monday</th>
+            <th scope="col" class="day-header">Tuesday</th>
+            <th scope="col" class="day-header">Wednesday</th>
+            <th scope="col" class="day-header">Thursday</th>
+            <th scope="col" class="day-header">Friday</th>
+
+      </tr>
+
+      <tr>
+         <th>Physics</th>
+         <td colspan="2">1-5 PM</td>
+         <td>-</td>
+         <td colspan="1" rowspan="2">-</td>
+         <td rowspan="4">-</td>
+      </tr>
+
+      <tr>
+         <th>Web Dev</th>
+         <td rowspan="4" colspan="1">-</td>
+         <td colspan="2">8-12 PM</td>
+      </tr>
+      <tr>
+         <th>Cyber</th>
+         <td colspan="3">5-8 PM</td>
+      </tr>
+         
+      <tr>
+         <th>Theater</th>
+         <td rowspan="2" colspan="2">-</td>
+         <td rowspan="2">All day</td>
+      </tr>
+
+      <tr>
+         <th>Stats</th>
+         <td>All day</td>
+      </tr>
+
+      
+
+	
+   </table>
+</div>
+
+
+
+</body>
+</html>
+
