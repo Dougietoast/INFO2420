@@ -5,21 +5,76 @@
 <title>Douglas Casasayas's Home Page</title>
 
 <style>
-    body
-    {
-        background-color: gray;
+    /* reset some default margins */
+    body {
+        margin: 0;
+        padding: 0;
         font-family: Arial, Helvetica, sans-serif;
-        margin: 0 15% 0;
-        
+        background: #f0f0f0;
+        color: #333;
+    }
+
+    /* center content with a white card look */
+    .container {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 1rem 2rem;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 4px;
+    }
+
+    header {
+        text-align: center;
+        padding-bottom: 1rem;
+        border-bottom: 3px solid #005a9c;
+    }
+    header h1 {
+        margin: 0;
+        color: #005a9c;
+    }
+
+    h2 {
+        color: #005a9c;
+        margin-top: 2rem;
+        border-bottom: 2px solid #005a9c;
+        padding-bottom: 0.3rem;
+    }
+
+    ul {
+        list-style-type:armenian;
+        padding-left: 0;
+    }
+    li {
+        margin: 0.5rem 0;
+    }
+
+    a {
+        color: #42d6f0;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a:visited {
+        color: #ed68f1;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 2rem 0;
     }
 </style>
 </head>
 
 <body>
-<h1>Douglas's INFO2420 home page</h1>
-<hr>
+<div class="container">
+    <header>
+        <h1>Douglas's INFO2420 home page</h1>
+    </header>
 
-<!-- Practices -->
+    <!-- Practices -->
 <h2>Practices</h2>
     <ul>
         <li><a href="practices/Practice1A/index.html">Practice 1A</a></li>
@@ -40,9 +95,10 @@
 <!-- Projects -->
 <h2>Projects</h2>
     <ul>
-        <li><a href="projects/Project1.htm">Project 1: Website Critique</a></li>
+        <li>Project 1: <a href="projects/Project1.htm">Website Critique</a></a></li>
         <li>Project 2: Rent A Pet - <a href="projects/Project2/AboutUs.html">About Us</a> and <a href="projects/Project2/Tributes.html">Customer Tributes</a></li>
         <li>Project 3: Rent A Pet - <a href="projects/Project3/SiteDesign.html">Site Design</a>, <a href="projects/Project3/AboutUs.html">About Us</a> and <a href="projects/Project3/Tributes.html">Customer Tributes</a></li>
+        <li>Project 4: Rent A Pet - Using Tables for Tabulated Data:  <a href="projects/Project4/AboutUs.html">About Us</a> and <a href="projects/Project4/Tributes.html">Customer Tributes</a></li>
     </ul>
 
 <hr>
@@ -50,7 +106,6 @@
 <!-- Book Assignments -->
 <!--<h2>Book Assignments</h2>-->
 
-
-
+</div> <!-- .container -->
 </body>
 </html>
